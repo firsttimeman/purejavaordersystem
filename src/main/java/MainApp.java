@@ -59,7 +59,11 @@ public class MainApp {
                     continue;
                 }
 
-                req.merge(id, amount, Integer::sum);
+                if (req.containsKey(id)) {
+                    req.put(id, req.get(id) + amount);
+                } else {
+                    req.put(id, amount);
+                }
             } catch (NumberFormatException e) {
                 System.out.println("잘못된 숫자 입력입니다. 다시 입력해주세요");
             }
@@ -94,7 +98,7 @@ public class MainApp {
     }
 
     private static String printPrompt(String prompt) throws IOException {
-        System.out.println(prompt);
+        System.out.print(prompt);
         return br.readLine();
     }
 }

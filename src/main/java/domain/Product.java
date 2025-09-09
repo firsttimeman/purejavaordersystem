@@ -1,12 +1,16 @@
 package domain;
 
 import java.util.Objects;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Product {
     private final long id;
     private final String name;
     private final long price;
     private int stock;
+
+
+    private final ReentrantLock lock = new ReentrantLock();
 
     public Product(long price, long id, String name, int stock) {
         this.price = price;
@@ -27,18 +31,27 @@ public class Product {
         return price;
     }
 
+
+
+    public void lock() {
+        lock.lock();
+    }
+    public void unlock() {
+        lock.unlock();
+    }
+
+
     public int getStock() {
         return stock;
     }
 
-    public boolean hasStock(int amount) {
-        return amount > 0 && stock >= amount;
+    public boolean canConsume(int n ) {
+        return n > 0 && stock >= n;
     }
 
-    public void consume(int amount) {
-        stock -= amount;
+    public void consume(int n) {
+        stock -= n;
     }
-
 
     @Override
     public boolean equals(Object o) {
