@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed">
+  <component name="RunManager" selected="애플리케이션.MainApp">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainApp" />
+      <module name="twentyninecm-console.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderTest.concurrent_orders_on_different_products_both_succeed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -137,54 +143,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="OrderTest.order_multi_items_success" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;OrderTest.order_multi_items_success&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="OrderTest.order_multi_items_success_and_sorted_locking" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;OrderTest.order_multi_items_success_and_sorted_locking&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="OrderTest.rollback_on_failure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,6 +157,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;OrderTest.rollback_on_failure&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderTest.testOrderSurpass" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;OrderTest.testOrderSurpass&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.MainApp" />
+        <item itemvalue="Gradle.OrderTest.testOrderSurpass" />
         <item itemvalue="Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed" />
         <item itemvalue="Gradle.OrderTest.rollback_on_failure" />
         <item itemvalue="Gradle.OrderTest.order_exact_stock_then_exceed_throw" />
-        <item itemvalue="Gradle.OrderTest.order_multi_items_success" />
-        <item itemvalue="Gradle.OrderTest.order_multi_items_success_and_sorted_locking" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +234,7 @@
       <workItem from="1757054323954" duration="17708000" />
       <workItem from="1757216522454" duration="7571000" />
       <workItem from="1757326514561" duration="25441000" />
-      <workItem from="1757506967656" duration="7652000" />
+      <workItem from="1757506967656" duration="9360000" />
     </task>
     <servers />
   </component>

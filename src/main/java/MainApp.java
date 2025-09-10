@@ -41,9 +41,7 @@ public class MainApp {
     }
 
     private static void handleOrder(CheckOutService checkOutService) throws IOException {
-
         Map<Long, Integer> req = new LinkedHashMap<>();
-
 
         while (true) {
             String idStr = printPrompt("상품번호 : ");
@@ -58,12 +56,7 @@ public class MainApp {
                     System.out.println("수량은 1 이상이어야 합니다.");
                     continue;
                 }
-
-                if (req.containsKey(id)) {
-                    req.put(id, req.get(id) + amount);
-                } else {
-                    req.put(id, amount);
-                }
+                req.merge(id, amount, Integer::sum);
             } catch (NumberFormatException e) {
                 System.out.println("잘못된 숫자 입력입니다. 다시 입력해주세요");
             }
@@ -76,6 +69,8 @@ public class MainApp {
             System.out.println();
             System.out.println(receipt);
         } catch (SoldOutException e) {
+            System.out.println(e.getMessage());
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }
