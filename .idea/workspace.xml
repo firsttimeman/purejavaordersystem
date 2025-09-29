@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="" />
+    <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +67,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.OrderSystem [:MainApp.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.OrderTest.order_exact_stock_then_exceed_throw.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.OrderTest.order_multi_items_success.executor&quot;: &quot;Run&quot;,
@@ -235,6 +242,9 @@
       <workItem from="1757326514561" duration="25441000" />
       <workItem from="1757506967656" duration="9838000" />
       <workItem from="1757653336634" duration="4000" />
+      <workItem from="1759156563422" duration="508000" />
+      <workItem from="1759157087829" duration="47000" />
+      <workItem from="1759157150785" duration="5000" />
     </task>
     <servers />
   </component>
