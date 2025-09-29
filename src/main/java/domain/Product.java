@@ -10,7 +10,6 @@ public class Product {
     private int stock;
 
 
-    private final ReentrantLock lock = new ReentrantLock();
 
     public Product(long price, long id, String name, int stock) {
         this.price = price;
@@ -32,13 +31,6 @@ public class Product {
     }
 
 
-
-    public void lock() {
-        lock.lock();
-    }
-    public void unlock() {
-        lock.unlock();
-    }
 
 
     public int getStock() {

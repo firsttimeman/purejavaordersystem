@@ -1,5 +1,6 @@
 package service;
 
+import concurrent.LockManager;
 import domain.OrderItem;
 import domain.OrderReceipt;
 import domain.Product;
@@ -7,12 +8,14 @@ import exception.SoldOutException;
 import repo.ProductCatalog;
 
 import java.util.*;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class CheckOutService {
     private static final long SHIPPING_FEE = 2500;
     private static final long SHIPPING_LIMIT = 50000;
 
     private final ProductCatalog productCatalog;
+    private final LockManager lockManager = new LockManager();
 
     public CheckOutService(ProductCatalog productCatalog) {
         this.productCatalog = productCatalog;
@@ -20,14 +23,19 @@ public class CheckOutService {
 
     public OrderReceipt checkOut(Map<Long, Integer> orderRequest) {
 
+        for (Map.Entry<Long, Integer> entry : orderRequest.entrySet()) {
+            if(entry.getValue() == null || entry.getValue() <= 0) {
+                throw new IllegalArgumentException("수량은 1 이상 이어야 합니다. 상품 ID = " + entry.getKey());
+            }
+        }
+
         List<Product> products = orderRequest.keySet().stream()
                 .map(id -> productCatalog.findById(id)
                         .orElseThrow(() -> new IllegalArgumentException("상품이 없음: " + id)))
                 .sorted(Comparator.comparingLong(Product::getId))
                 .toList();
 
-        lockAll(products);
-
+        List<ReentrantLock> lockList = lockManager.lockAllByIds(orderRequest.keySet());
         try {
             for (Product product : products) {
                 int amount = orderRequest.get(product.getId());
@@ -51,22 +59,10 @@ public class CheckOutService {
             return new OrderReceipt(items, orderAmount, shippingFee, pay);
 
         } finally {
-            unlockAll(products);
+           lockManager.unlockAllByIds(lockList);
         }
-
 
     }
 
-    private void unlockAll(List<Product> products) {
-        ListIterator<Product> it = products.listIterator(products.size());
-        while (it.hasPrevious()) {
-            it.previous().unlock();
-        }
-    }
 
-    private void lockAll(List<Product> products) {
-        for (Product product : products) {
-            product.lock();
-        }
-    }
 }
