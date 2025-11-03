@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +64,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Gradle.OrderSystem [:MainApp.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderSystem 빌드.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.OrderTest.order_exact_stock_then_exceed_throw.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.OrderTest.order_multi_items_success.executor&quot;: &quot;Run&quot;,
@@ -90,13 +87,16 @@
     &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.MainApp.executor&quot;: &quot;Run&quot;
   }
 }</component>
   <component name="RunManager" selected="애플리케이션.MainApp">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="MainApp" />
-      <module name="twentyninecm-console.main" />
+      <module name="OrderSystem.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,11 +244,29 @@
       <workItem from="1757653336634" duration="4000" />
       <workItem from="1759156563422" duration="508000" />
       <workItem from="1759157087829" duration="47000" />
-      <workItem from="1759157150785" duration="5000" />
+      <workItem from="1759157150785" duration="1053000" />
+      <workItem from="1759206998069" duration="2579000" />
+      <workItem from="1759316197168" duration="500000" />
+      <workItem from="1759326902909" duration="1000" />
+      <workItem from="1759831344964" duration="2999000" />
+      <workItem from="1762173689879" duration="178000" />
     </task>
+    <task id="LOCAL-00001" summary="...">
+      <option name="closed" value="true" />
+      <created>1759157177302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759157177302</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>
