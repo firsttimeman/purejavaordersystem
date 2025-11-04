@@ -61,36 +61,36 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.OrderSystem [:MainApp.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderSystem 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.order_exact_stock_then_exceed_throw.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.order_multi_items_success.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.order_multi_items_success_and_sorted_locking.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.order_success_with_and_without_shippingFee.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.rollback_on_failure.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.testOrderMultiThread.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.testOrderMultiThread_locking_ok.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderTest.testOrderSurpass.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Test29 [:MainApp.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Test29.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.MainApp.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.OrderSystem [:MainApp.main()].executor": "Run",
+    "Gradle.OrderSystem 빌드.executor": "Run",
+    "Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed.executor": "Run",
+    "Gradle.OrderTest.order_exact_stock_then_exceed_throw.executor": "Run",
+    "Gradle.OrderTest.order_multi_items_success.executor": "Run",
+    "Gradle.OrderTest.order_multi_items_success_and_sorted_locking.executor": "Run",
+    "Gradle.OrderTest.order_success_with_and_without_shippingFee.executor": "Run",
+    "Gradle.OrderTest.rollback_on_failure.executor": "Run",
+    "Gradle.OrderTest.testOrderMultiThread.executor": "Run",
+    "Gradle.OrderTest.testOrderMultiThread_locking_ok.executor": "Run",
+    "Gradle.OrderTest.testOrderSurpass.executor": "Run",
+    "Gradle.Test29 [:MainApp.main()].executor": "Run",
+    "Gradle.Test29.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/sychronized",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.MainApp.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="애플리케이션.MainApp">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
@@ -249,7 +249,8 @@
       <workItem from="1759316197168" duration="500000" />
       <workItem from="1759326902909" duration="1000" />
       <workItem from="1759831344964" duration="2999000" />
-      <workItem from="1762173689879" duration="178000" />
+      <workItem from="1762173689879" duration="3373000" />
+      <workItem from="1762235595799" duration="4077000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
