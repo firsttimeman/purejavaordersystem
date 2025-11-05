@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repo/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/ProductCatalog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.ConcurrencyTest.concurrent_orders_on_different_products_both_success.executor": "Run",
+    "Gradle.ConcurrencyTest.executor": "Run",
+    "Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success.executor": "Run",
+    "Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync.executor": "Run",
     "Gradle.OrderSystem [:MainApp.main()].executor": "Run",
     "Gradle.OrderSystem 빌드.executor": "Run",
     "Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed.executor": "Run",
@@ -91,7 +96,7 @@
     "애플리케이션.MainApp.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager" selected="애플리케이션.MainApp">
+  <component name="RunManager" selected="Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -101,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.concurrent_orders_on_different_products_both_succeed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ConcurrencyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -114,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OrderTest.concurrent_orders_on_different_products_both_succeed&quot;" />
+            <option value="&quot;ConcurrencyTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -125,7 +130,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="OrderTest.order_exact_stock_then_exceed_throw" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ConcurrencyTest.concurrent_orders_on_different_products_both_success" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -138,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OrderTest.order_exact_stock_then_exceed_throw&quot;" />
+            <option value="&quot;ConcurrencyTest.concurrent_orders_on_different_products_both_success&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -149,7 +154,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="OrderTest.rollback_on_failure" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ConcurrencyTest.same_product_multi_thread_only_stock_size_success" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -162,7 +167,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OrderTest.rollback_on_failure&quot;" />
+            <option value="&quot;ConcurrencyTest.same_product_multi_thread_only_stock_size_success&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -173,7 +178,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="OrderTest.testOrderSurpass" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -186,7 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;OrderTest.testOrderSurpass&quot;" />
+            <option value="&quot;ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync" />
+        <item itemvalue="Gradle.ConcurrencyTest" />
+        <item itemvalue="Gradle.ConcurrencyTest.concurrent_orders_on_different_products_both_success" />
+        <item itemvalue="Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success" />
         <item itemvalue="애플리케이션.MainApp" />
-        <item itemvalue="Gradle.OrderTest.testOrderSurpass" />
-        <item itemvalue="Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed" />
-        <item itemvalue="Gradle.OrderTest.rollback_on_failure" />
-        <item itemvalue="Gradle.OrderTest.order_exact_stock_then_exceed_throw" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +255,9 @@
       <workItem from="1759326902909" duration="1000" />
       <workItem from="1759831344964" duration="2999000" />
       <workItem from="1762173689879" duration="3373000" />
-      <workItem from="1762235595799" duration="4077000" />
+      <workItem from="1762235595799" duration="5781000" />
+      <workItem from="1762325608595" duration="505000" />
+      <workItem from="1762331153007" duration="6644000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
