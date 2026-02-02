@@ -1,3 +1,4 @@
+import concurrent.SortedReentrantLockManager;
 import domain.OrderReceipt;
 import domain.Product;
 import exception.SoldOutException;
@@ -18,7 +19,7 @@ public class MainApp {
 
     public static void main(String[] args) throws IOException {
         ProductCatalog catalog = new ProductCatalog();
-        CheckOutService checkOutService = new CheckOutService(catalog);
+        CheckOutService checkOutService = new CheckOutService(catalog, new SortedReentrantLockManager());
 
         while(true) {
             String cmd = printPrompt("입력(o[order]: 주문, q[quit]: 종료) : ");
@@ -56,7 +57,7 @@ public class MainApp {
                     System.out.println("수량은 1 이상이어야 합니다.");
                     continue;
                 }
-                req.merge(id, amount, Integer::sum);
+                req.merge(id, amount, Integer::sum); // todo 볼필요함
             } catch (NumberFormatException e) {
                 System.out.println("잘못된 숫자 입력입니다. 다시 입력해주세요");
             }
@@ -68,9 +69,7 @@ public class MainApp {
             OrderReceipt receipt = checkOutService.checkOut(req);
             System.out.println();
             System.out.println(receipt);
-        } catch (SoldOutException e) {
-            System.out.println(e.getMessage());
-        } catch (IllegalArgumentException e) {
+        } catch (SoldOutException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }

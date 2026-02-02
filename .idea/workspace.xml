@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repo/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/ProductCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/LockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/LockManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CheckOutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CheckOutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/SynchronizedCheckOutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SynchronizedCheckOutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ConcurrencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConcurrencyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -64,10 +72,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.CheckOutServiceBeforeAfterComparisonTest.동시주문_락_전후_비교_같은시나리오로_돌린다.executor": "Run",
+    "Gradle.CheckOutServiceConcurrencyTest.executor": "Run",
+    "Gradle.CheckOutServiceConcurrencyTest.동시주문_단일상품_재고음수없고_성공건수는_초기재고만큼만.executor": "Run",
+    "Gradle.CheckOutServiceConcurrencyTest.동시주문_두상품_반대순서여도_가능하다.executor": "Run",
+    "Gradle.CheckOutServiceTest.checkOut_재고부족이면_예외_그리고_수량복귀.executor": "Run",
+    "Gradle.CheckOutServiceTest.checkOut_정사주문_재고차감_영수증금액계산.executor": "Run",
+    "Gradle.CheckOutServiceTest.checkout_수량이0이하면.executor": "Run",
+    "Gradle.CheckOutServiceTest.executor": "Run",
     "Gradle.ConcurrencyTest.concurrent_orders_on_different_products_both_success.executor": "Run",
     "Gradle.ConcurrencyTest.executor": "Run",
     "Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success.executor": "Run",
     "Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync.executor": "Run",
+    "Gradle.OrderItemTest.executor": "Run",
+    "Gradle.OrderItemTest.getTotalPrice.executor": "Run",
     "Gradle.OrderSystem [:MainApp.main()].executor": "Run",
     "Gradle.OrderSystem 빌드.executor": "Run",
     "Gradle.OrderTest.concurrent_orders_on_different_products_both_succeed.executor": "Run",
@@ -79,9 +98,18 @@
     "Gradle.OrderTest.testOrderMultiThread.executor": "Run",
     "Gradle.OrderTest.testOrderMultiThread_locking_ok.executor": "Run",
     "Gradle.OrderTest.testOrderSurpass.executor": "Run",
+    "Gradle.ProductTest.canConsume_재고가_0이하면.executor": "Run",
+    "Gradle.ProductTest.canConsume_재고가_충문하면_true.executor": "Run",
+    "Gradle.ProductTest.consume_호출.executor": "Run",
+    "Gradle.ProductTest.executor": "Run",
     "Gradle.Test29 [:MainApp.main()].executor": "Run",
     "Gradle.Test29.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "feature/sychronized",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -96,17 +124,17 @@
     "애플리케이션.MainApp.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync">
-    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="MainApp" />
-      <module name="OrderSystem.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConcurrencyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="service" />
+      <recent name="domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.CheckOutServiceBeforeAfterComparisonTest.동시주문_락_전후_비교_같은시나리오로_돌린다">
+    <configuration name="CheckOutServiceBeforeAfterComparisonTest.동시주문_락_전후_비교_같은시나리오로_돌린다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ConcurrencyTest&quot;" />
+            <option value="&quot;service.CheckOutServiceBeforeAfterComparisonTest.동시주문_락_전후_비교_같은시나리오로_돌린다&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -130,7 +158,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConcurrencyTest.concurrent_orders_on_different_products_both_success" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CheckOutServiceConcurrencyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ConcurrencyTest.concurrent_orders_on_different_products_both_success&quot;" />
+            <option value="&quot;service.CheckOutServiceConcurrencyTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +182,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConcurrencyTest.same_product_multi_thread_only_stock_size_success" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CheckOutServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,7 +195,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ConcurrencyTest.same_product_multi_thread_only_stock_size_success&quot;" />
+            <option value="&quot;service.CheckOutServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,7 +206,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderItemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +219,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync&quot;" />
+            <option value="&quot;domain.OrderItemTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;domain.ProductTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success_sync" />
-        <item itemvalue="Gradle.ConcurrencyTest" />
-        <item itemvalue="Gradle.ConcurrencyTest.concurrent_orders_on_different_products_both_success" />
-        <item itemvalue="Gradle.ConcurrencyTest.same_product_multi_thread_only_stock_size_success" />
-        <item itemvalue="애플리케이션.MainApp" />
+        <item itemvalue="Gradle.CheckOutServiceBeforeAfterComparisonTest.동시주문_락_전후_비교_같은시나리오로_돌린다" />
+        <item itemvalue="Gradle.OrderItemTest" />
+        <item itemvalue="Gradle.ProductTest" />
+        <item itemvalue="Gradle.CheckOutServiceConcurrencyTest" />
+        <item itemvalue="Gradle.CheckOutServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +309,10 @@
       <workItem from="1762173689879" duration="3373000" />
       <workItem from="1762235595799" duration="5781000" />
       <workItem from="1762325608595" duration="505000" />
-      <workItem from="1762331153007" duration="6644000" />
+      <workItem from="1762331153007" duration="7344000" />
+      <workItem from="1765794697136" duration="652000" />
+      <workItem from="1769775241719" duration="20826000" />
+      <workItem from="1770013727468" duration="6325000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
