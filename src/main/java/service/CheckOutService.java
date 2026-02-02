@@ -1,6 +1,6 @@
 package service;
 
-import concurrent.LockManager;
+import concurrent.ProductLockManager;
 import domain.OrderItem;
 import domain.OrderReceipt;
 import domain.Product;
@@ -8,17 +8,18 @@ import exception.SoldOutException;
 import repo.ProductCatalog;
 
 import java.util.*;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.Lock;
 
 public class CheckOutService {
     private static final long SHIPPING_FEE = 2500;
     private static final long SHIPPING_LIMIT = 50000;
 
     private final ProductCatalog productCatalog;
-    private final LockManager lockManager = new LockManager();
+    private final ProductLockManager productLockManager;
 
-    public CheckOutService(ProductCatalog productCatalog) {
+    public CheckOutService(ProductCatalog productCatalog, ProductLockManager productLockManager) {
         this.productCatalog = productCatalog;
+        this.productLockManager = productLockManager;
     }
 
     public OrderReceipt checkOut(Map<Long, Integer> orderRequest) {
@@ -35,7 +36,8 @@ public class CheckOutService {
                 .sorted(Comparator.comparingLong(Product::getId))
                 .toList();
 
-        List<ReentrantLock> lockList = lockManager.lockAllByIds(orderRequest.keySet());
+        List<Lock> lockList = productLockManager.lockAllByIds(orderRequest.keySet());
+
         try {
             for (Product product : products) {
                 int amount = orderRequest.get(product.getId());
@@ -59,7 +61,7 @@ public class CheckOutService {
             return new OrderReceipt(items, orderAmount, shippingFee, pay);
 
         } finally {
-           lockManager.unlockAllByIds(lockList);
+            productLockManager.unlockAllByIds(lockList);
         }
 
     }
