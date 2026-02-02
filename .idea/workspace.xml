@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="...">
+    <list default="true" id="6d08cab9-f3cb-49fd-ba1c-16108421bd76" name="변경" comment="test: 테스트 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/LockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/LockManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CheckOutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CheckOutService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/SynchronizedCheckOutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SynchronizedCheckOutService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ConcurrencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConcurrencyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +305,7 @@
       <workItem from="1762331153007" duration="7344000" />
       <workItem from="1765794697136" duration="652000" />
       <workItem from="1769775241719" duration="20826000" />
-      <workItem from="1770013727468" duration="6325000" />
+      <workItem from="1770013727468" duration="8116000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
@@ -322,7 +315,31 @@
       <option name="project" value="LOCAL" />
       <updated>1759157177302</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: 락 테스트를 위한 버전 나눔 + 인터페이스 추가">
+      <option name="closed" value="true" />
+      <created>1770022166932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770022166932</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: 컨벤션 정리">
+      <option name="closed" value="true" />
+      <created>1770022190871</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770022190871</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test: 테스트 구현">
+      <option name="closed" value="true" />
+      <created>1770022266274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770022266274</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +347,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="feat: 락 테스트를 위한 버전 나눔 + 인터페이스 추가" />
+    <MESSAGE value="chore: 컨벤션 정리" />
+    <MESSAGE value="refactor: 클래스 수정으로 인한 클래스 수정" />
+    <MESSAGE value="test: 테스트 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 테스트 구현" />
   </component>
 </project>
